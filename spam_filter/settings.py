@@ -10,6 +10,7 @@ https://docs.djangoproject.com/en/1.7/ref/settings/
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 import os
+from os.path import abspath, basename, dirname, join, normpath
 BASE_DIR = os.path.dirname(os.path.dirname(__file__))
 
 
@@ -26,11 +27,27 @@ TEMPLATE_DEBUG = DEBUG
 
 ALLOWED_HOSTS = []
 
+########## PATH CONFIGURATION
+# Absolute filesystem path to the Django project directory:
+DJANGO_ROOT = dirname((abspath(__file__)))
+
+
 # Absolute filesystem path to the top-level project folder:
 PROJECT_PATH = dirname(DJANGO_ROOT)
 
 # Site name:
 SITE_NAME = basename(DJANGO_ROOT)
+
+########## MEDIA CONFIGURATION
+# Absolute filesystem path to the directory that will hold user-uploaded files.
+# Example: "/var/www/example.com/media/"
+MEDIA_ROOT = ''
+
+# URL that handles the media served from MEDIA_ROOT. Make sure to use a
+# trailing slash.
+# Examples: "http://example.com/media/", "http://media.example.com/"
+MEDIA_URL = ''
+########## END MEDIA CONFIGURATION
 
 ########## STATIC FILE CONFIGURATION
 # Absolute path to the directory static files should be collected to.
@@ -43,7 +60,7 @@ STATIC_ROOT = normpath(join(PROJECT_PATH, 'static'))
 # Example: "http://example.com/static/", "http://static.example.com/"
 STATIC_URL = '/static/'
 
-
+print PROJECT_PATH
 # Additional locations of static files
 STATICFILES_DIRS = (
     # Put strings here, like "/home/html/static" or "C:/www/django/static".
@@ -69,7 +86,6 @@ TEMPLATE_CONTEXT_PROCESSORS = (
     'django.core.context_processors.request',
     'django.core.context_processors.static',
     'django.core.context_processors.request',
-    'lib.custom_context_processors.header_data',
 )
 
 # List of callables that know how to import templates from various sources.
@@ -95,6 +111,7 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'spam_detection',
 )
 
 MIDDLEWARE_CLASSES = (
