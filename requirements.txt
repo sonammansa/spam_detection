@@ -1,0 +1,4 @@
+Django==1.7.7
+numpy==1.11.0
+scikit-learn==0.17.1
+wheel==0.24.0

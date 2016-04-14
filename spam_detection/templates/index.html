@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<link href="css/links.css" rel="stylesheet" />
+		<link href="css/header.css" rel="stylesheet" />
+		<script src="js/lightbox-form.js"></script>
+		<link href="css/lightbox-form.css" rel="stylesheet" />
+		<link href="css/main.css" rel="stylesheet" />
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+		<script src="js/main.js"></script>
+	</head>
+	<body bgcolor="darkgrey" text="pink">
+		<div id="head" align="center">
+			<br />
+			<a href="#" class="button ml-algo" id="default">Home</a>
+			<a href="#" class="button ml-algo" id="multinomial-nb">MultinomialNB</a>
+            <a href="#" class="button ml-algo" id="svm">SVM</a>
+            <a href="#" class="button ml-algo" id="decision-tree">Decision Tree</a>
+            <a href="#" class="button ml-algo" id="gaussian-nb">GaussianNB</a>
+            <a href="#" class="button ml-algo" id="logistic-regression">LogisticRegression</a>
+            <a href="#" class="button ml-algo" id="random-forest">RandomForest</a>
+            <a href="#" class="button ml-algo" id="gradient-boosting">GradientBoosting</a>
+            <a href="#" class="button ml-algo" id="adaboost">AdaBoost</a>
+		</div>
+		<div id="wrapper">
+			<div id="default-graph" class="ml-graph">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Display of accuracy, precision and recall for all classifiers</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/All_8.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+
+			<div id="multinomial-nb-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.800217155266	Precision:0.739010989011 Recall:0.751396648045	</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/MultiNB.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+			
+			<div id="svm-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.836047774159	Precision:0.796561604585 Recall:0.776536312849</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/svm.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+
+			<div id="decision-tree-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.905537459283 Precision:0.873278236915 Recall:0.885474860335</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/decision_tree.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+
+			<div id="gaussian-nb-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.812160694897 Precision:0.686868686869 Recall:0.949720670391</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/gaussianNB.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+
+			<div id="logistic-regression-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.916395222584 Precision:0.927051671733 Recall:0.851955307263</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/logistic_regression.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+
+			<div id="random-forest-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.944625407166 Precision:0.960960960961 Recall:0.893854748603</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/randomforest.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+
+			<div id="gradient-boosting-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.952225841477 Precision:0.948571428571 Recall:0.927374301676</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/gradient_boosting.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+
+			<div id="adaboost-graph" class="ml-graph" style="display: none;">
+				<div style="text-align:center;margin-top: 10%;">
+					<h2 style="background-color:black; margin-left:20%;margin-right:10%">
+						<font face="Segoe Print" color="White"><pre>Accuracy:0.946796959826 Precision:0.945244956772 Recall:0.916201117318</pre>
+						</font>
+					</h2>
+				</div>
+				<div id="content" align="center">
+					<img src="img/adaboost.png" style="width:500px;height:400px;">
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

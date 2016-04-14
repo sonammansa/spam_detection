@@ -1,0 +1,44 @@
+.classname
+{
+    -moz-box-shadow: 22px 15px 16px #000000;
+    -webkit-box-shadow: 22px 15px 5px #000000;
+    box-shadow: 22px 15px 16px #000000;
+}
+
+
+
+h2 {
+    text-shadow: 0 0 10px #fff,
+                 0 0 20px #fff,
+                 0 0 30px #fff,
+                 0 0 40px blue,
+                 0 0 70px blue,
+                 0 0 80px blue,
+                 0 0 100px blue,
+                 0 0 150px blue;
+    
+
+
+.wt1
+    {
+        color:lightgrey;
+        font-family:arial;
+    }
+}
+
+
+
+
+.button {
+    background-color: #800080;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
