@@ -7,7 +7,9 @@ https://virtualenv.pypa.io/en/latest/installation.html
 
 
 virtualenv venv
+
 source venv/bin/activate
+
 pip install -r requirements.txt
 
 ----- RUN -------
